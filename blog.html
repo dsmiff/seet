@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dom Smith</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pretiffy.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body data-twttr-rendered="true" data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+		  <li>
+                    <a href="./index.html">Home</a>
+		  </li>
+                  <li>
+                    <a href="./index.html#about">About</a>
+                  </li>
+                  <li>
+                    <a href="./index.html#projects">Projects</a>
+                  </li>
+                  <li>
+                    <a href="./index.html#contact">Contact</a>
+                  </li>
+		  <li>
+		    <a href="./blog.html">Blog</a>
+		  </li>		    
+                </ul>
+		<a class="brand" href="http://www.domlucasmith.com">domsmith</a>
+            </div>
+            <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    
+    <!-- Page Content -->
+    <div class="container">
+      <div class="image">
+       <h1>Blog</h1>      
+       <p class="lead">
+	 A collection of miscellaneous snippets 
+       </p>
+      </div>
+      
+      <div class="tweet_block">
+	<div class="well sidebar-nav">
+	  <ul class="nav">
+	    <li class="active"><a href="#">Top</a></li>
+	    <li class="active"><a href="#">Miscellaneous</a></li>
+	  </ul>
+	</div>
+      </div>    
+
+      <div class="content_block">
+	<section id="blog">
+	  <h1 style="float: left"> Fetching GitHub Pull Requests  <span style="float: right"> <h3>10th November 2016</h3> </span> </h1>
+	  <p>
+	    Aim is to easily retrieve pull requests made to the repository's base branch.
+	    Find the <c id="code"> .git/config </c>  file, then note the structure inside:
+	  <p>
+	    <c id="code">
+	      [remote "origin"]
+	      <br>
+	      fetch = +refs/heads/*:refs/remotes/origin/*
+	      <br>
+	      url = git@github.com:repo/repo.git
+	    </c>
+	  </p>
+	  <p> Add the line <c id="code"> fetch = +refs/pull/*/head:refs/remotes/origin/pr/* </c>
+	    to this section.
+	    <br>
+	    Now you should fetch the pull request from the repository. Following which, you can
+	    check out a particular pull request via <c id="code"> git checkout pr/001 </c>
+	  </p>  
+	</section>
+      </div>
+
+      <!---- Footer ---->
+      <footer class="footer">
+	  <p>
+	    <span style="float: left"> 2016 © domlucasmith.com | <a href="mailto:dosmith@cern.ch">
+		dosmith@cern.ch </a>
+	    </span>
+	    <a href="#" style="float: right"> Back to top</a>
+	  </p>
+      </footer>
+
+     
+    </div> <!--- End container -->
+    
+    <div class="script">
+	<script>
+	  ! function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0],
+	  p = /^http:/.test(d.location) ? 'http' : 'https';
+	  if (!d.getElementById(id)) {
+	  js = d.createElement(s);
+	  js.id = id;
+	  js.src = p + "://platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+	  }
+	  }(document, "script", "twitter-wjs");
+	</script>
+    </div>
+	
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/contact.js"></script>  
+</body>
+
+</html>
