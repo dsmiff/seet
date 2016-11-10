@@ -18,6 +18,11 @@
     -moz-transition: all .2s linear;
     transition: all .2s linear;
 }
+.img-circle {
+    border-radius: 35%;
+    height: auto;
+    width: 18%;
+}
 .twitter-timeline {
     height: 490px;
 }
