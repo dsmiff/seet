@@ -23,6 +23,11 @@
     height: auto;
     width: 18%;
 }
+.img-blog-circle {
+    border-radius: 35%;
+    height: auto;
+    width: 22%;
+}
 .twitter-timeline {
     height: 490px;
 }
