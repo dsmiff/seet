@@ -23,6 +23,12 @@
     height: auto;
     width: 18%;
 }
+.img-square {
+    border-radius: 44%;
+    height: 29px;
+    width: auto;
+    float: right;
+}
 .img-blog-circle {
     border-radius: 20%;
     height: auto;
