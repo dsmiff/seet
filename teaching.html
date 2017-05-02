@@ -61,7 +61,7 @@
                   </li>
 		  <li>
 		    <a href="./blog.html">Blog</a>
-		  </li>
+		  </li>		    
 		  <li>
 		    <a href="./teaching.html">Teaching</a>
 		  </li>
@@ -78,70 +78,100 @@
     <!-- Page Content -->
     <div class="container">
       <div class="image">
-       <h1>Blog         <img class="img-circle" style="float:right" src="shortbread.jpg"></h1> 
+       <h1>Teaching         <img class="img-circle" style="float:right" src="blackhole.jpg"></h1> 
        <p class="lead">
-	 A collection of miscellaneous snippets 
+	 Questions for the Subatomic Physics II Course at Vrije Universiteit Brussels
        </p>
       </div>
       
       <div class="tweet_block">
 	<div class="well sidebar-nav">
 	  <ul class="nav">
-	    <li class="active"><a href="#">Top</a></li>
-	    <li class="active"><a href="#">Python <span style="float:right" id="python_counter">  </span></a></li>
-	    <li class="active"><a href="#">JavaScript <span style="float:right" id="js_counter">  </span></a></li>
-	    <li class="active"><a href="#">GitHub <span style="float:right" id="git_counter">1</span></a></li>
-	    <li class="active"><a href="#">Bash <span style="float:right" id="bash_counter">  </span></a></li>
+	    <li class="active"><a href="#UnderlyingConcepts">Underlying Concepts</a></li>
+	    <li class="active"><a href="#DecayRates">Decay rates and cross sections </a></li>
+	    <li class="active"><a href="#Dirac">The Dirac Equation </a></li>
+	    <li class="active"><a href="#EP">Electron-positron annihilation </a></li>
+	    <li class="active"><a href="#DIS">Deep-inelastic scattering </a></li>
+	    <li class="active"><a href="#Symmetries">Symmetries and the quark model </a></li>
+	    <li class="active"><a href="#QCD">Quantum Chromodynamics </a></li>
+	    <li class="active"><a href="#Weak">The Weak Interaction </a></li>
 	  </ul>
 	</div>
       </div>    
 
       <div class="content_block">
-
-	<!--- GitHub search commits --->
-	<section id="blog">
-	  <h1 id="blog_v4_title" style="float: left">Placeholder <span style="float: right"><h3 class="blog_v4_date">Date </h3></span></h1>
-	  <p id="blog_v4">Placeholder</p>
+	<section id="UnderlyingConcepts">
+	  <h1> Underlying Concepts </h1>
+	  <hr>
+	  <p>Historical background:
+	    <a href"./Questions/HistoricalBackground.pdf"> pdf </a>
+	  </p>
 	</section>
 
-	<!--- HTCondenser --->
-	<section id="blog">
-	  <h1 id="blog_v3_title" style="float: left"> Placeholder <span style="float: right"> <h3 class="blog_v3_date">Date </h3> </span></h1>
-	  <p id="blog_v3">Placeholder </p>
+	<section id="DecayRates">
+	  <h1> Decay Rates and cross sections </h1>
+	  <hr>
+	  <p> Date: 24th February 2017
+	    <a href="./Questions/Questions_240217.pdf">Questions </a>	      
+	  </p>
+	</section>
+
+	<section id="Dirac">
+	  <h1> The Dirac Equation </h1>
+	  <hr>
+	  <p>Date: 3rd March 2017
+	    <a href="./Questions/Questions_030317.pdf">Questions</a>
+	  </p>
+	</section>
+
+
+	<section id="EP">
+	  <h1> Electron-positron annihilation </h1>
+	  <hr>
+	  <p> Date: 10th March 2017
+	    <a href="./Questions/Questions_100317.pdf">Questions</a>
+	  </p>
+	</section>
+
+	<section id="DIS">
+	  <h1> Elastic and inelastic scattering </h1>
+	  <hr>
+	  <p> Date: 24th March 2017
+	    <a href="./Questions/Questions_240317.pdf">Questions </a>
+	  </p>
 	</section>
 	
-	<!--- JavaScript blog --->
-	<section id="blog">
-	  <h1 id="blog_v2_title" style="float: left">Placeholder <span style="float: right"> <h3 class="blog_v2_date">Date </h3> </span></h1>
-	  <p id="blog_v2">Placeholder </p>
+	<section id="DIS">
+	  <h1> Deep-inelastic scattering </h1>
+	  <hr>
+	  <p> Date: 31st March 2017
+	    <a href="./Questions/Questions_310317.pdf">Questions </a>
+	  </p>
 	</section>
 
-	<!--- GitHub PR blog --->
-	<section id="blog">
-	  <h1 style="float: left"> Fetching GitHub Pull Requests  <span style="float: right"> <h3>10th November 2016</h3> </span> </h1>
-	  <p>
-	    Aim is to easily retrieve pull requests made to the repository's base branch.
-	    Find the <c id="code"> .git/config </c>  file, then note the structure inside:
-	  <p>
-	    <c id="code">
-	      [remote "origin"]
-	      <br>
-	      fetch = +refs/heads/*:refs/remotes/origin/*
-	      <br>
-	      url = git@github.com:repo/repo.git
-	    </c>
-	  </p>
-	  <p> Add the line <c id="code"> fetch = +refs/pull/*/head:refs/remotes/origin/pr/* </c>
-	    to this section.
-	    <br>
-	    Now you should fetch the pull request from the repository. Following which, you can
-	    check out a particular pull request via <c id="code"> git checkout pr/001 </c>
-	  </p>
-	  <a href> #github </a>
+	<section id="Symmetries">
+	  <h1> Symmetries and the quark model</h1>
+	  <hr>
+	  <p> </p>
 	</section>
-	<hr>
-		
-	<!--<button type="button" onclick="alertWindow()">More </button> -->
+
+	<section id="QCD">
+	  <h1> Quantum Chromodynamics</h1>
+	  <hr>
+	  <p> Date: 18th April 2017
+	    <a href="./Questions/Questions_180417.pdf">Questions </a>
+	  </p>
+	</section>
+
+	<section id="Weak">
+	  <h1> The Weak Interaction</h1>
+	  <hr>
+	  <p> Date: 28th April 2017 
+	    <a href="./Questions/Questions_280417.pdf">Questions </a>
+	  </p>
+	</section>
+
+	
       </div>
 
 
